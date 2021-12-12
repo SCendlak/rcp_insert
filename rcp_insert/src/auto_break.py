@@ -39,7 +39,7 @@ class BreakRcp:
                     second_payload = SecondPayload().set_instance({
                         'status_id': d['Id'],
                         'qr': second_page.json()['qrCode'],
-                        'is_end': d['IsEnd'],
+                        'is_end': second_page.json()['preferedStatusIsEnd'],
                         'time_local_unix': second_page.json()['timeLocalUnix'],
                         'time_utc_unix': second_page.json()['timeUtcUnix'],
                         'time_zone_id': second_page.json()['timeZoneId']
